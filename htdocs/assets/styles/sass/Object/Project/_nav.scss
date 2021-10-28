@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+.p-nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    .p-nav__item {
+      margin-right: 16px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

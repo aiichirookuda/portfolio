@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+.p-thumbnails {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 34px;
+  row-gap: 34px;
+
+  &__item {
+    position: relative;
+  }
+}
