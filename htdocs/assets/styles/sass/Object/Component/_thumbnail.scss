@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+.c-thumbnail {
+  width: 240px;
+  height: 135px;
+  opacity: 1;
+  transition: opacity 500ms;
+
+  &.is-active {
+    opacity: 0.3;
+  }
+}

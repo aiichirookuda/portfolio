@@ -424,6 +424,13 @@ body {
   margin: 0 auto;
 }
 
+.l-copy {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 15px;
+}
+
 .c-navLink {
   display: inline-block;
   background: #fff;
@@ -441,6 +448,37 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: 0.1em;
+}
+
+.c-icon {
+  width: 100px;
+}
+
+.c-title {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  transition: opacity 500ms;
+}
+.c-title.is-active {
+  opacity: 1;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.c-thumbnail {
+  width: 240px;
+  height: 135px;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.c-thumbnail.is-active {
+  opacity: 0.3;
 }
 
 .p-logo {
@@ -489,5 +527,75 @@ body {
 }
 .p-thumbnails__item {
   position: relative;
+  background-color: black;
+}
+.p-thumbnails__item .p-thumbnails__link {
+  display: block;
+}
+
+.p-profile__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.p-profile__left {
+  width: 50%;
+  margin-right: 116px;
+  font-size: 2.4rem;
+}
+.p-profile__left .p-profile__detail {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 10px;
+}
+.p-profile__left .p-profile__detail:last-of-type {
+  margin-bottom: 0;
+}
+.p-profile__left .p-profile__detail .p-profile__item {
+  margin-right: 14px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+.p-profile__left .p-profile__detail .p-profile__desc {
+  letter-spacing: 0.1em;
+}
+.p-profile__right {
+  width: 50%;
+}
+.p-profile__text {
+  margin: 0 auto;
+  width: 740px;
+  letter-spacing: 0.1em;
+  line-height: 1.875;
+}
+
+.p-skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 79px;
+  row-gap: 51px;
+}
+.p-skill__item {
+  height: 300px;
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+.p-skill__item .p-skill__icon {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.p-skill__item .p-skill__icon .p-skill__name {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  padding: 5px;
+  border-bottom: 5px solid #abafd4;
+}
+.p-skill__item .p-skill__text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  padding: 0 15px;
+  word-break: break-all;
 }
 /*# sourceMappingURL=styles.css.map */

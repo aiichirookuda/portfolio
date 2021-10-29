@@ -8,5 +8,10 @@
 
   &__item {
     position: relative;
+    background-color: black;
+
+    .p-thumbnails__link {
+      display: block;
+    }
   }
 }

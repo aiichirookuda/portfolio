@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+.p-skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 79px;
+  row-gap: 51px;
+
+  &__item {
+    height: 300px;
+    padding: 25px 0;
+    box-sizing: border-box;
+    // border: 5px solid $purple;
+
+    .p-skill__icon {
+      text-align: center;
+      margin-bottom: 16px;
+
+      .p-skill__name {
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+        padding: 5px;
+        border-bottom: 5px solid $purple;
+      }
+    }
+
+    .p-skill__text {
+      font-size: 1.4rem;
+      line-height: 1.7;
+      letter-spacing: 0.1em;
+      padding: 0 15px;
+      word-break: break-all;
+    }
+  }
+}

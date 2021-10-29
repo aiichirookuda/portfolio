@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+.p-profile {
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  &__left {
+    width: 50%;
+    margin-right: 116px;
+    font-size: 2.4rem;
+
+    .p-profile__detail {
+      display: flex;
+      justify-content: right;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .p-profile__item {
+        margin-right: 14px;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+      }
+
+      .p-profile__desc {
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
+  &__right {
+    width: 50%;
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 740px;
+    letter-spacing: 0.1em;
+    line-height: 1.875;
+  }
+}
