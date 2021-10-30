@@ -2,12 +2,88 @@
 
 .p-section {
   margin-bottom: 100px;
-  
+
   &__heading {
     color: $purple;
     font-size: 2.4rem;
     letter-spacing: 0.1em;
     text-align: center;
     padding: 36px;
+  }
+
+  &--small {
+    margin-bottom: 100px;
+
+    .p-section__title {
+      color: $white;
+      background-color: $purple;
+      font-size: 3rem;
+      padding: 0 8px;
+    }
+
+    .p-section__url {
+      display: inline-block;
+      color: $purple;
+      text-decoration: underline;
+      letter-spacing: 0.1em;
+      word-break: break-word;
+      padding: 0 8px;
+      margin-bottom: 24px;
+    }
+
+    .p-info {
+      display: flex;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+
+      &__name {
+        margin-right: 8px;
+      }
+
+      &__list {
+        .p-info__item {
+          display: inline-block;
+          background-color: $purple;
+          color: $white;
+          padding: 0 8px;
+        }
+      }
+    }
+
+    .p-section__heading {
+      color: $purple;
+      text-align: left;
+      padding: 0;
+    }
+
+    .p-section__text {
+      font-size: 1.4rem;
+      line-height: 2.1;
+    }
+
+    .p-section__primaryList {
+      font-size: 1.4rem;
+      line-height: 2.1;
+
+      .p-section__item {
+        padding-left: 16px;
+        background-image: url(/assets/images/icon_primaryList.png);
+        background-repeat: no-repeat;
+        background-position: 0px 7.5px;
+        background-size: 12px;
+
+        margin-bottom: 16px;
+      }
+    }
+
+    .p-section__secondaryList {
+      .p-section__item {
+        background-image: url(/assets/images/icon_secondaryList.png);
+        background-repeat: no-repeat;
+        background-position: 0px 8px;
+        background-size: 10px;
+        margin-bottom: 0;
+      }
+    }
   }
 }

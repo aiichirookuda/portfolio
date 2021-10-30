@@ -3,4 +3,27 @@
 .l-main {
   width: 1060px;
   margin: 0 auto;
+
+  &__twoColumn {
+    height: 100vh;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    .l-main__left {
+      width: 310px;
+      overflow-y: scroll;
+      -ms-overflow-style: none; /* IE, Edge 対応 */
+      scrollbar-width: none; /* Firefox 対応 */
+      &::-webkit-scrollbar {
+        /* Chrome, Safari 対応 */
+        display: none;
+      }
+    }
+
+    .l-main__right {
+      overflow-y: scroll;
+    }
+  }
 }

@@ -1,33 +1,136 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/styles/css/styles.css" />
-  <title>portfolio</title>
-</head>
-<body>
-  <header class="l-header js-header">
-    <div class="l-header__inner">
-      <h1 class="p-logo--small">
-        <p class="p-logo__top">AIICHIRO OKUDA</p>
-        <p class="p-logo__bottom">portfolio</p>
-      </h1>
-      <nav class="p-nav">
-        <ul class="p-nav__list">
-          <li class="p-nav__item">
-            <a class="c-navLink" href="#">WORKS</a>
-          </li>
-          <li class="p-nav__item">
-            <a class="c-navLink" href="#">PROFILE</a>
-          </li>
-          <li class="p-nav__item">
-            <a class="c-navLink" href="#">SKILL</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/css/styles.css" />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header class="l-header is-show">
+      <div class="l-header__inner">
+        <h1 class="p-logo--small">
+          <a class="p-logo__link" href="/index.html">
+            <p class="p-logo__top">AIICHIRO OKUDA</p>
+            <p class="p-logo__bottom">portfolio</p>
+          </a>
+        </h1>
+        <nav class="p-nav">
+          <ul class="p-nav__list">
+            <li class="p-nav__item">
+              <a class="c-navLink" href="#">WORKS</a>
+            </li>
+            <li class="p-nav__item">
+              <a class="c-navLink" href="#">PROFILE</a>
+            </li>
+            <li class="p-nav__item">
+              <a class="c-navLink" href="#">SKILL</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="l-main">
+      <div class="l-main__twoColumn">
+        <div class="l-main__left">
+          <section class="p-section--small">
+            <h2 class="p-section__title">Hello, Web Design.</h2>
+            <a class="p-section__url" href="#">https://aiichirookuda.github.io/Hello-Web-Design/</a>
+            <div class="p-info">
+              <h4 class="p-info__name">category</h4>
+              <ul class="p-info__list">
+                <li class="p-info__item">Website</li>
+              </ul>
+            </div>
+            <div class="p-info">
+              <h4 class="p-info__name">tag</h4>
+              <ul class="p-info__list">
+                <li class="p-info__item">HTML</li>
+                <li class="p-info__item">CSS</li>
+                <li class="p-info__item">jQuery</li>
+                <li class="p-info__item">Illustrator</li>
+              </ul>
+            </div>
+            <div class="p-info"></div>
+            <div class="p-info"></div>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">overview</h3>
+            <p class="p-section__text">
+              スクールの制作課題。何でも良いのでWEBデザインをするということでしたので、WEBデザイン初学者に向け、WEBデザインが楽しいものだと伝えられるように作成しました。レスポンシブ対応。
+              <br />
+              （2021年8月15日、制作時間：30時間）
+            </p>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">制作の経緯</h3>
+            <p class="p-section__text">
+              スクールの中間課題により作成。制作物はこれから入校する生徒が見る可能性があるとのこと。
+            </p>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">要件</h3>
+            <ul class="p-section__primaryList">
+              <li class="p-section__item">
+                目的
+                <ul class="p-section__secondaryList">
+                  <li class="p-section__item">
+                    WEBデザインは楽しいものだと感じてもらう。
+                  </li>
+                  <li class="p-section__item">
+                    これから勉強することを楽しみに思ってもらう。
+                  </li>
+                </ul>
+              </li>
+              <li class="p-section__item">
+                ターゲット
+                <ul class="p-section__secondaryList">
+                  <li class="p-section__item">WEBデザイン初学者。</li>
+                  <li class="p-section__item">
+                    WEBデザインの勉強ついていけるか不安を感じている人。
+                  </li>
+                </ul>
+              </li>
+              <li class="p-section__item">
+                トンマナ
+                <ul class="p-section__secondaryList">
+                  <li class="p-section__item">
+                    楽しい、ワクワクを連想させる。ゲームのような明るい色使いを採用。
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">工夫した点</h3>
+            <ul class="p-section__primaryList">
+              <li class="p-section__item">
+                ファーストビューのメッセージはRPGゲーム冒頭のよくある文章をオマージュ。訪問者の目を引くようにjQueryで徐々に表示されるように制御しました。
+              </li>
+              <li class="p-section__item">
+                道具屋のセクションにはデザインの勉強に役立つツールや心がけをイラストで表示。ページの雰囲気に合うようにIllustratorで作成。
+              </li>
+            </ul>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">振り返り</h3>
+            <p class="p-section__text">
+              はじめてデザインカンプの作成からページ制作を行いました。ターゲットや目的を明確にする作業はデザインを円滑に進めることにも直結すると感じました。
+              <br />
+              反省点としてはレスポンシブ対応に時間を要してしまったこと。デザイン、コーディングの段階でレスポンシブ対応に向けて構造を考えておく必要があると思いました。
+            </p>
+          </section>
+        </div>
+        <aside class="l-main__right">
+          <img
+            class="c-topVisual"
+            src="/assets/images/topVisual.png"
+            alt="topVisual"
+          />
+        </aside>
+      </div>
+    </main>
+    <p class="l-copy--fixed">&copy;AIICHIRO OKUDA</p>
+  </body>
 </html>

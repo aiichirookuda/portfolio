@@ -5,4 +5,11 @@
   letter-spacing: 0.1em;
   text-align: center;
   padding: 15px;
+
+  &--fixed {
+    @extend .l-copy;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
 }
