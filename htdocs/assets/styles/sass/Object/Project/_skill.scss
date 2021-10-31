@@ -5,12 +5,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 79px;
   row-gap: 51px;
+  @include sp {
+    grid-template-columns: 1fr;
+  }
 
   &__item {
     height: 300px;
     padding: 25px 0;
     box-sizing: border-box;
-    // border: 5px solid $purple;
 
     .p-skill__icon {
       text-align: center;

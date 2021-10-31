@@ -3,6 +3,10 @@
 .l-main {
   width: 1060px;
   margin: 0 auto;
+  @include sp {
+    width: auto;
+    margin: 0 10px;
+  }
 
   &__twoColumn {
     height: 100vh;
@@ -14,15 +18,15 @@
     .l-main__left {
       width: 310px;
       overflow-y: scroll;
-      -ms-overflow-style: none; /* IE, Edge 対応 */
-      scrollbar-width: none; /* Firefox 対応 */
+      -ms-overflow-style: none;
+      scrollbar-width: none;
       &::-webkit-scrollbar {
-        /* Chrome, Safari 対応 */
         display: none;
       }
     }
 
     .l-main__right {
+      width: 720px;
       overflow-y: scroll;
     }
   }

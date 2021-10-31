@@ -3,12 +3,30 @@
 .p-thumbnails {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   column-gap: 34px;
   row-gap: 34px;
+
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  -webkit-column-gap: 34px;
+  -moz-column-gap: 34px;
+
+  @include sp {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    -ms-grid-columns: 1fr 1fr;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+  }
 
   &__item {
     position: relative;
     background-color: black;
+    @include sp {
+      background-color: $purple;
+    }
 
     .p-thumbnails__link {
       display: block;

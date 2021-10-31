@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 45px;
+    @include sp {
+      display: block;
+    }
   }
 
   &__left {
@@ -43,5 +46,8 @@
     width: 740px;
     letter-spacing: 0.1em;
     line-height: 1.875;
+    @include sp {
+      width: auto;
+    }
   }
 }
