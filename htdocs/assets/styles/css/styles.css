@@ -603,23 +603,9 @@ body {
   color: #abafd4;
   text-decoration: underline;
   letter-spacing: 0.1em;
-  word-break: break-word;
+  word-break: break-all;
   padding: 0 8px;
   margin-bottom: 24px;
-}
-.p-section--small .p-info {
-  display: flex;
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-}
-.p-section--small .p-info__name {
-  margin-right: 8px;
-}
-.p-section--small .p-info__list .p-info__item {
-  display: inline-block;
-  background-color: #abafd4;
-  color: #fff;
-  padding: 0 8px;
 }
 .p-section--small .p-section__heading {
   color: #abafd4;
@@ -728,5 +714,20 @@ body {
   letter-spacing: 0.1em;
   padding: 0 15px;
   word-break: break-all;
+}
+
+.p-info {
+  display: flex;
+  font-size: 1.4rem;
+}
+.p-info__name {
+  margin-right: 8px;
+}
+.p-info__list .p-info__item {
+  display: inline-block;
+  background-color: #abafd4;
+  color: #fff;
+  padding: 0 8px;
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=styles.css.map */

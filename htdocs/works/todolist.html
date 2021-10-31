@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/css/styles.css" />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header class="l-header is-show">
+      <div class="l-header__inner">
+        <h1 class="p-logo--small">
+          <a class="p-logo__link" href="/index.html">
+            <p class="p-logo__top">AIICHIRO OKUDA</p>
+            <p class="p-logo__bottom">portfolio</p>
+          </a>
+        </h1>
+        <nav class="p-nav">
+          <ul class="p-nav__list">
+            <li class="p-nav__item">
+              <a class="c-navLink" href="#">WORKS</a>
+            </li>
+            <li class="p-nav__item">
+              <a class="c-navLink" href="#">PROFILE</a>
+            </li>
+            <li class="p-nav__item">
+              <a class="c-navLink" href="#">SKILL</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="l-main">
+      <div class="l-main__twoColumn">
+        <div class="l-main__left">
+          <section class="p-section--small">
+            <h2 class="p-section__title">todolist</h2>
+            <a
+              class="p-section__url"
+              href="https://aiichirookuda.github.io/todolist/"
+              target="_blank"
+              >https://aiichirookuda.github.io/todolist/
+            </a>
+            <div class="p-info">
+              <h4 class="p-info__name">category</h4>
+              <ul class="p-info__list">
+                <li class="p-info__item">Website</li>
+              </ul>
+            </div>
+            <div class="p-info">
+              <h4 class="p-info__name">tag</h4>
+              <ul class="p-info__list">
+                <li class="p-info__item">HTML</li>
+                <li class="p-info__item">CSS</li>
+                <li class="p-info__item">JavaScript</li>
+                <li class="p-info__item">React</li>
+              </ul>
+            </div>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">overview</h3>
+            <p class="p-section__text">
+              はじめて作った成果物。Reactで作成しました。レスポンシブ対応。データベース連携はしていません。
+              <br />
+              （完成：2021年1月25日 制作時間：60時間）
+            </p>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">機能</h3>
+            <ul class="p-section__primaryList">
+              <li class="p-section__item">todoの追加、削除、完了</li>
+              <li class="p-section__item">todoの詳細記載、締め切り日設定</li>
+              <li class="p-section__item">
+                todoの色分け
+                <ul class="p-section__secondaryList">
+                  <li class="p-section__item">締め切り日に達してない→緑</li>
+                  <li class="p-section__item">締め切り日当日→黄</li>
+                  <li class="p-section__item">締め切り日を過ぎた→赤</li>
+                </ul>
+              </li>
+              <li class="p-section__item">
+                完了したtodoは、完了済としてdoneリストへ表示されます。
+              </li>
+              <li class="p-section__item">
+                doneリストには完了日が記載されます。
+              </li>
+              <li class="p-section__item">doneからtodoへ戻せます。</li>
+              <li class="p-section__item">
+                スマホ画面対応。
+                <ul class="p-section__secondaryList">
+                  <li class="p-section__item">
+                    画面右上ボタンでtodo⇄doneの切替可能。
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">コンセプト</h3>
+            <ul class="p-section__primaryList">
+              <li class="p-section__item">シンプル</li>
+              <li class="p-section__item">ノートと付箋のような雰囲気</li>
+            </ul>
+          </section>
+          <section class="p-section--small">
+            <h3 class="p-section__heading">振り返り</h3>
+            <p class="p-section__text">
+              はじめての成果物とはいえ、もっとコンポーネントを分けてコーディングするなど、作成後のメンテナンス性などを考慮すべきでした。
+              <br />
+              <br />
+              またデザイン面では、ボタンサイズなどは適切か、ぱっと見で使い方が把握できるかなど、UI/UXの知識の浅さに気づくことができました。
+            </p>
+          </section>
+        </div>
+        <aside class="l-main__right">
+          <img
+            class="c-topVisual"
+            src="/assets/images/topVisual.png"
+            alt="topVisual"
+          />
+        </aside>
+      </div>
+    </main>
+    <p class="l-copy--fixed">&copy;AIICHIRO OKUDA</p>
+  </body>
+</html>

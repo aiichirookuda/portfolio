@@ -26,28 +26,9 @@
       color: $purple;
       text-decoration: underline;
       letter-spacing: 0.1em;
-      word-break: break-word;
+      word-break: break-all;
       padding: 0 8px;
       margin-bottom: 24px;
-    }
-
-    .p-info {
-      display: flex;
-      font-size: 1.4rem;
-      margin-bottom: 8px;
-
-      &__name {
-        margin-right: 8px;
-      }
-
-      &__list {
-        .p-info__item {
-          display: inline-block;
-          background-color: $purple;
-          color: $white;
-          padding: 0 8px;
-        }
-      }
     }
 
     .p-section__heading {
