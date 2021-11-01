@@ -22,7 +22,6 @@
     height: 80px;
     @include sp {
       height: 50px;
-      padding-left: calc(env(safe-area-inset-left) + .2em);
     }
   }
 }

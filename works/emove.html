@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../assets/styles/css/styles.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js"></script>
     <title>portfolio</title>
@@ -67,46 +68,64 @@
           <section class="p-section--small">
             <h3 class="p-section__heading">overview</h3>
             <p class="p-section__text">
-              スクールの制作課題。何でも良いのでWEBデザインをするということでしたので、WEBデザイン初学者に向け、WEBデザインが楽しいものだと伝えられるように作成しました。レスポンシブ対応。
+              訓練校の課題にて制作。企業サイトを想定し、サービス内容など細かい設定などの企画書の作成から取り掛かりました。
               <br />
-              （2021年8月15日、制作時間：30時間）
+              （完成：2021年9月30日、制作時間：60時間）
             </p>
           </section>
           <section class="p-section--small">
             <h3 class="p-section__heading">制作の経緯</h3>
-            <p class="p-section__text">
-              スクールの中間課題により作成。制作物はこれから入校する生徒が見る可能性があるとのこと。
-            </p>
+            <p class="p-section__text">訓練校の最終課題として作成。</p>
           </section>
           <section class="p-section--small">
             <h3 class="p-section__heading">要件</h3>
             <ul class="p-section__primaryList">
               <li class="p-section__item">
-                目的
+                企業設定
+                <ul class="p-section__secondaryList">
+                  <li class="p-section__item">社名：EMOVE株式会社</li>
+                  <li class="p-section__item">
+                    事業内容：月額制映画作品配信サービスの開発、運営
+                  </li>
+                  <li class="p-section__item">
+                    規模：Hulu、dTV、NETFLIXなどに並ぶ、大規模映画配信サービスの運営会社
+                  </li>
+                </ul>
+              </li>
+              <li class="p-section__item">
+                社名の由来
+                <ul class="p-section__secondaryList">
+                  <li class="p-section__item">emotion（感情）→EMO</li>
+                  <li class="p-section__item">move（動く）→MOVE</li>
+                </ul>
+              </li>
+              <li class="p-section__item">
+                WEBサイトの目的
                 <ul class="p-section__secondaryList">
                   <li class="p-section__item">
-                    WEBデザインは楽しいものだと感じてもらう。
+                    サービスアップデートにともなうページのリニューアル
                   </li>
-                  <li class="p-section__item">
-                    これから勉強することを楽しみに思ってもらう。
-                  </li>
+                  <li class="p-section__item">新規契約者の獲得</li>
                 </ul>
               </li>
               <li class="p-section__item">
                 ターゲット
                 <ul class="p-section__secondaryList">
-                  <li class="p-section__item">WEBデザイン初学者。</li>
+                  <li class="p-section__item">前提は映画好き</li>
                   <li class="p-section__item">
-                    WEBデザインの勉強ついていけるか不安を感じている人。
+                    好きな映画で繋がりを広げたい人
                   </li>
+                  <li class="p-section__item">
+                    映画の楽しみを人と共有したい人
+                  </li>
+                  <li class="p-section__item">遠距離恋愛のカップル</li>
+                  <li class="p-section__item">ネット友達</li>
                 </ul>
               </li>
               <li class="p-section__item">
                 トンマナ
                 <ul class="p-section__secondaryList">
-                  <li class="p-section__item">
-                    楽しい、ワクワクを連想させる。ゲームのような明るい色使いを採用。
-                  </li>
+                  <li class="p-section__item">はっきりとした色合い</li>
                 </ul>
               </li>
             </ul>
@@ -115,19 +134,29 @@
             <h3 class="p-section__heading">工夫した点</h3>
             <ul class="p-section__primaryList">
               <li class="p-section__item">
-                ファーストビューのメッセージはRPGゲーム冒頭のよくある文章をオマージュ。訪問者の目を引くようにjQueryで徐々に表示されるように制御しました。
+                新しいサービスのアピール、新規契約者の獲得のめ、TOPページはLP風に作成。
               </li>
               <li class="p-section__item">
-                道具屋のセクションにはデザインの勉強に役立つツールや心がけをイラストで表示。ページの雰囲気に合うようにドット絵をIllustratorで作成。
+                TOPページビジュアルは映画のマッシュアップ動画を画面いっぱいに表示。
+              </li>
+              <li class="p-section__item">
+                作品名、作品画像などの情報はTMDBのAPIを使って取得。週間人気先品を表示。
+              </li>
+              <li class="p-section__item">
+                APPページの動画サムネイルをクリックすると、Youtubeのトレーラー映像が表示。
+              </li>
+              <li class="p-section__item">
+                ロゴ・・・繋がりを意味する輪。楽しませる意味合いにピエロの顔のデザイン。
               </li>
             </ul>
           </section>
           <section class="p-section--small">
             <h3 class="p-section__heading">振り返り</h3>
             <p class="p-section__text">
-              はじめてデザインカンプの作成からページ制作を行いました。ターゲットや目的を明確にする作業はデザインを円滑に進めることにも直結すると感じました。
+              LPページの作成は初めてだったので、他のサイトを参考にするなど、良い勉強になりました。API通信を使用して情報取得をしたので閲覧するタイミングによって表示される情報が違ったり、動画を埋めこんだりなど飽きさせないページ作りができた。
               <br />
-              反省点としてはレスポンシブ対応に時間を要してしまったこと。デザイン、コーディングの段階でレスポンシブ対応に向けて構造を考えておく必要があると思いました。
+              <br />
+              反省点として、TOPページの動画再生、ローディングアニメーションの挙動が重かったり、不安定な時がある。上手く表示されない時のための代替え画像を用意するなど、改善の余地あり。
             </p>
           </section>
         </div>

@@ -6,9 +6,20 @@
   color: $purple;
   font-size: 2.4rem;
   letter-spacing: 0.1em;
-  padding: 0 8px;
+  padding: 0 7px;
+  border: 1px solid transparent;
+  transition: all 300ms;
+  
   @include sp {
     font-size: 1.6rem;
+  }
+
+  @include pc {
+    &:hover {
+      background: $purple;
+      color: $white;
+      border: 1px solid $white;
+    }
   }
 
   &--purple {
