@@ -793,14 +793,14 @@ body {
 }
 .p-section--small .p-section__primaryList .p-section__item {
   padding-left: 16px;
-  background-image: url(/assets/images/icon_primaryList.png);
+  background-image: url(../../images/icon_primaryList.png);
   background-repeat: no-repeat;
   background-position: 0px 7.5px;
   background-size: 12px;
   margin-bottom: 16px;
 }
 .p-section--small .p-section__secondaryList .p-section__item {
-  background-image: url(/assets/images/icon_secondaryList.png);
+  background-image: url(../../images/icon_secondaryList.png);
   background-repeat: no-repeat;
   background-position: 0px 8px;
   background-size: 10px;
