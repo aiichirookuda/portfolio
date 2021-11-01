@@ -5,6 +5,7 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
+const ghPages = require('gulp-gh-pages');
 const cssPath = 'htdocs/assets/styles/css/';
 const sassEdit = 'htdocs/assets/styles/sass/';
 const jsEdit = 'htdocs/assets/scripts/';
@@ -53,6 +54,12 @@ gulp.task('babel', function () {
       })
     )
     .pipe(gulp.dest(destPath + 'scripts/'));
+});
+
+// gh-pagesデプロイ
+gulp.task('deploy', function() {
+  return gulp.src(htmlEdit)
+    .pipe(ghPages());
 });
 
 ///serve//////////////////////////////////////////////////
