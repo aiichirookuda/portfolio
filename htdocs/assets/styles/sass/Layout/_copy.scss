@@ -11,5 +11,9 @@
     position: fixed;
     bottom: 0;
     right: 0;
+
+    @include sp {
+      position: static;
+    }
   }
 }

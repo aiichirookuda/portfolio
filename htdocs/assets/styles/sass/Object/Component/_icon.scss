@@ -2,4 +2,8 @@
 
 .c-icon {
   width: 100px;
+
+  @include sp {
+    width: 50px;
+  }
 }

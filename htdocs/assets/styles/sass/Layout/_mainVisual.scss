@@ -4,6 +4,9 @@
   height: 698px;
   background: $purple;
   position: relative;
+  @include sp {
+    height: 200px;
+  }
 
   &__box {
     position: absolute;

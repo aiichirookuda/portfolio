@@ -7,7 +7,7 @@
     align-items: center;
     margin-bottom: 45px;
     @include sp {
-      display: block;
+      justify-content: space-between;
     }
   }
 
@@ -15,11 +15,19 @@
     width: 50%;
     margin-right: 116px;
     font-size: 2.4rem;
+    @include sp {
+      width: auto;
+      margin-right: 0;
+      font-size: 1.4rem;
+    }
 
     .p-profile__detail {
       display: flex;
       justify-content: right;
       margin-bottom: 10px;
+      @include sp {
+        display: block;
+      }
 
       &:last-of-type {
         margin-bottom: 0;
@@ -39,6 +47,13 @@
 
   &__right {
     width: 50%;
+    @include sp {
+      width: auto;
+
+      .p-profile__image {
+        width: 120px;
+      }
+    }
   }
 
   &__text {
@@ -47,7 +62,9 @@
     letter-spacing: 0.1em;
     line-height: 1.875;
     @include sp {
+      font-size: 1.4rem;
       width: auto;
+      // line-height: 1.5;
     }
   }
 }

@@ -6,11 +6,11 @@
   top: 0;
   left: 0;
   z-index: 100;
-  pointer-events: none;
+  visibility: hidden;
   opacity: 0;
 
   &.is-show {
-    pointer-events: all;
+    visibility: visible;
     opacity: 1;
   }
 
@@ -20,6 +20,8 @@
     align-items: center;
     width: 100vw;
     height: 80px;
-    
+    @include sp {
+      height: 50px;
+    }
   }
 }

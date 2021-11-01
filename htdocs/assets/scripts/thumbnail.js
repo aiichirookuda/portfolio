@@ -1,5 +1,4 @@
 'use strict';
-'use strict';
 
 document.querySelectorAll('.js-thumbnail').forEach((el) => {
   el.addEventListener('mouseover', () => {

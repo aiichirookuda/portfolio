@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+.p-spNav {
+  display: none;
+
+  &.is-show {
+    display: block;
+  }
+
+  .p-spNav__item {
+    &--top,
+    &--middle,
+    &--bottom {
+      position: fixed;
+      z-index: 50;
+      top: 0;
+      right: 27px;
+      visibility: hidden;
+      transition: all 300ms;
+    }
+  }
+
+  &.is-active {
+    @extend .p-spNav;
+
+    .p-spNav__item {
+      &--top {
+        top: 70px;
+        visibility: visible;
+      }
+
+      &--middle {
+        top: 120px;
+        visibility: visible;
+      }
+
+      &--bottom {
+        top: 170px;
+        visibility: visible;
+      }
+    }
+  }
+}

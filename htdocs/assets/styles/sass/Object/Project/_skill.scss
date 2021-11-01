@@ -1,18 +1,36 @@
 @charset 'utf-8';
 
 .p-skill {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   column-gap: 79px;
   row-gap: 51px;
+
+  -ms-grid-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  -webkit-column-gap: 79px;
+  -moz-column-gap: 79px;
+
   @include sp {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+
+    -ms-grid-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
   }
 
   &__item {
     height: 300px;
     padding: 25px 0;
     box-sizing: border-box;
+    @include sp {
+      height: auto;
+      padding: 0;
+    }
 
     .p-skill__icon {
       text-align: center;
@@ -23,6 +41,9 @@
         letter-spacing: 0.1em;
         padding: 5px;
         border-bottom: 5px solid $purple;
+        @include sp {
+          border-bottom: 3px solid $purple;
+        }
       }
     }
 
@@ -32,6 +53,9 @@
       letter-spacing: 0.1em;
       padding: 0 15px;
       word-break: break-all;
+      @include sp {
+        padding: 0 5px;
+      }
     }
   }
 }

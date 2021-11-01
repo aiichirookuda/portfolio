@@ -1,0 +1,69 @@
+@charset 'utf-8';
+
+.p-hamburger {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  right: 27px;
+  transform: translateY(-50%);
+
+  &__btn {
+    width: 100%;
+    height: 100%;
+
+    .p-hamburger__line {
+      display: block;
+      height: 2px;
+      width: 45%;
+      border-radius: 2px;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 400ms;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: $white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 400ms;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+
+    &.is-active {
+      @extend .p-hamburger__btn;
+
+      .p-hamburger__line {
+        background-color: transparent;
+
+        &::before {
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::after {
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

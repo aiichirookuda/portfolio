@@ -16,15 +16,25 @@
             <p class="p-logo__bottom">portfolio</p>
           </a>
         </h1>
-        <nav class="p-nav">
+        <nav class="p-nav u-use--pc">
           <ul class="p-nav__list">
             <li class="p-nav__item">
               <a class="c-navLink" href="/index.html">HOME</a>
             </li>
           </ul>
         </nav>
+        <div class="p-hamburger u-use--sp">
+          <div class="p-hamburger__btn js-menu">
+            <span class="p-hamburger__line"></span>
+          </div>
+        </div>
       </div>
     </header>
+    <ul class="p-spNav is-show">
+      <li class="p-spNav__item--top">
+        <a class="c-navLink--purple" href="/index.html">HOME</a>
+      </li>
+    </ul>
     <main class="l-main">
       <div class="l-main__twoColumn">
         <div class="l-main__left">
@@ -89,5 +99,6 @@
       </div>
     </main>
     <p class="l-copy--fixed">&copy;AIICHIRO OKUDA</p>
+    <script src="/assets/dist/scripts/menu.js"></script>
   </body>
 </html>

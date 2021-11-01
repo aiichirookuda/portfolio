@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles/css/styles.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js"></script>
     <title>portfolio</title>
   </head>
   <body>
@@ -16,21 +17,39 @@
             <p class="p-logo__bottom">portfolio</p>
           </a>
         </h1>
-        <nav class="p-nav">
+        <nav class="p-nav u-use--pc">
           <ul class="p-nav__list">
             <li class="p-nav__item">
-              <a class="c-navLink" href="#">WORKS</a>
+              <a class="c-navLink" href="#works">WORKS</a>
             </li>
             <li class="p-nav__item">
-              <a class="c-navLink" href="#">PROFILE</a>
+              <a class="c-navLink" href="#profile">PROFILE</a>
             </li>
             <li class="p-nav__item">
-              <a class="c-navLink" href="#">SKILL</a>
+              <a class="c-navLink" href="#skill">SKILL</a>
             </li>
           </ul>
         </nav>
+        <div class="p-hamburger u-use--sp">
+          <div class="p-hamburger__btn js-menu">
+            <span class="p-hamburger__line"></span>
+          </div>
+        </div>
       </div>
     </header>
+
+    <ul class="p-spNav">
+      <li class="p-spNav__item--top">
+        <a class="c-navLink--purple" href="#works">WORKS</a>
+      </li>
+      <li class="p-spNav__item--middle">
+        <a class="c-navLink--purple" href="#profile">PROFILE</a>
+      </li>
+      <li class="p-spNav__item--bottom">
+        <a class="c-navLink--purple" href="#skill">SKILL</a>
+      </li>
+    </ul>
+
     <div class="l-mainVisual">
       <div class="l-mainVisual__box">
         <h1 class="p-logo">
@@ -40,13 +59,13 @@
         <nav class="p-nav">
           <ul class="p-nav__list">
             <li class="p-nav__item">
-              <a class="c-navLink" href="#">WORKS</a>
+              <a class="c-navLink" href="#works">WORKS</a>
             </li>
             <li class="p-nav__item">
-              <a class="c-navLink" href="#">PROFILE</a>
+              <a class="c-navLink" href="#profile">PROFILE</a>
             </li>
             <li class="p-nav__item">
-              <a class="c-navLink" href="#">SKILL</a>
+              <a class="c-navLink" href="#skill">SKILL</a>
             </li>
           </ul>
         </nav>
@@ -54,7 +73,7 @@
     </div>
     <main class="l-main">
       <section class="p-section">
-        <h2 class="p-section__heading">WORKS</h2>
+        <h2 class="p-section__heading" id="works">WORKS</h2>
         <ul class="p-thumbnails">
           <!-- WEB -->
           <li class="p-thumbnails__item">
@@ -190,7 +209,7 @@
         </ul>
       </section>
       <section class="p-section">
-        <h2 class="p-section__heading">PROFILE</h2>
+        <h2 class="p-section__heading" id="profile">PROFILE</h2>
         <div class="p-profile">
           <div class="p-profile__top">
             <div class="p-profile__left">
@@ -227,7 +246,7 @@
         </div>
       </section>
       <section class="p-section">
-        <h2 class="p-section__heading">SKILL</h2>
+        <h2 class="p-section__heading" id="skill">SKILL</h2>
         <ul class="p-skill">
           <li class="p-skill__item">
             <figure class="p-skill__icon">
@@ -331,7 +350,9 @@
       </section>
     </main>
     <p class="l-copy">&copy;AIICHIRO OKUDA</p>
-    <script src="/assets/scripts/header.js"></script>
+    <script src="/assets/dist/scripts/header.js"></script>
+    <script src="/assets/dist/scripts/menu.js"></script>
     <script src="/assets/dist/scripts/thumbnail.js"></script>
+    <script src="/assets/dist/scripts/scroll.js"></script>
   </body>
 </html>
