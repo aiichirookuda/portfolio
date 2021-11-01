@@ -58,7 +58,7 @@ gulp.task('babel', function () {
 
 // gh-pagesデプロイ
 gulp.task('deploy', function() {
-  return gulp.src(htmlEdit)
+  return gulp.src(htmlEdit + '**')
     .pipe(ghPages());
 });
 
