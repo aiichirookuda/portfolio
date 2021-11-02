@@ -405,6 +405,7 @@ html {
 body {
   font-size: 1.6rem;
   color: #474747;
+  background-color: #abafd4;
 }
 
 .l-header {
@@ -451,6 +452,7 @@ body {
 }
 
 .l-main {
+  background-color: #fff;
   width: 1060px;
   margin: 0 auto;
 }
@@ -499,6 +501,7 @@ body {
 }
 
 .l-copy, .l-copy--fixed {
+  background-color: #fff;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   text-align: center;

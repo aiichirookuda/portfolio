@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
-  font-family: 'Poppins', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro(ProN)', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+  font-family: 'Poppins', 'Helvetica Neue', 'Helvetica', 'Arial',
+    'Hiragino Kaku Gothic Pro(ProN)', 'Hiragino Sans', 'Yu Gothic', 'Meiryo',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 62.5%;
@@ -12,4 +14,5 @@ html {
 body {
   font-size: 1.6rem;
   color: $black;
+  background-color: $purple;
 }
