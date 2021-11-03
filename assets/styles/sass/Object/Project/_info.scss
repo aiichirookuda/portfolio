@@ -4,6 +4,10 @@
   display: flex;
   font-size: 1.4rem;
 
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
+
   &__name {
     margin-right: 8px;
   }
